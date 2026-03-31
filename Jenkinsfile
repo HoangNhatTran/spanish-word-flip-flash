@@ -10,7 +10,6 @@ pipeline {
             agent {
                 docker {
                     image 'node:22-alpine'
-                    args '-v /var/run/docker.sock:/var/run/docker.sock -e DOCKER_HOST=unix:///var/run/docker.sock'
                 }
             }
             steps {
